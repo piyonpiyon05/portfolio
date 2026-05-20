@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <!-- ここで style.css を読み込んでいます -->
+    <!-- style.css 読込 -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- ヘッダーエリア -->
+    <!-- -->
     <header>
         <div class="container">
-            <h1>My Portfolio</h1>
+            <h1>Ayaka Mochizuki Portfolio</h1>
             <nav>
                 <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#works">Works</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -23,11 +26,11 @@
         </div>
     </header>
 
-    <!-- メインビジュアル -->
+    <!-- メイン -->
     <section class="hero">
         <div class="container">
-            <div class="hero-img">🎨</div>
-            <h2>こんにちは、〇〇です！</h2>
+
+            <h2>こんにちは、現在大学3年生の望月彩花です！</h2>
             <p>ものづくりと、かわいいデザインが大好きです。</p>
         </div>
     </section>
@@ -39,7 +42,7 @@
         <section id="about">
             <h2 class="section-title">About Me</h2>
             <div class="profile-card">
-                <p>ここに自己紹介文を書きます。趣味や特技、ポートフォリオを作ったきっかけなどを優しく、あなたらしい言葉で書いてみてくださいね。</p>
+                <p>大学でプログラミングを学んでいます。</p>
             </div>
         </section>
 
@@ -47,33 +50,39 @@
         <section id="works">
             <h2 class="section-title">My Works</h2>
             <div class="works-grid">
-                
-                <!-- 作品1 -->
-                <div class="work-item">
-                    <div class="work-thumbnail">💻</div>
-                    <div class="work-info">
-                        <h3>作品タイトル1</h3>
-                        <p>作品の簡単な説明や、こだわったポイントをここに書きます。</p>
-                    </div>
-                </div>
 
-                <!-- 作品2 -->
-                <div class="work-item">
-                    <div class="work-thumbnail">📸</div>
-                    <div class="work-info">
-                        <h3>作品タイトル2</h3>
-                        <p>Webサイト、イラスト、写真など、作ったものを並べましょう。</p>
+                <!-- 作品1 Illustrator-->
+                <a href="illustrator-view.html" class="work-item-link">
+                    <div class="work-item">
+                        <div class="work-thumbnail">💻</div>
+                        <div class="work-info">
+                            <h3>Illustrator</h3>
+                            <p>簡単なアイコンの制作ができます。</p>
+                        </div>
                     </div>
-                </div>
+                </a>
+
+                <!-- 作品2 Figma-->
+                <a href="figma-view.html" class="work-item-link">
+                    <div class="work-item">
+                        <div class="work-thumbnail">📸</div>
+                        <div class="work-info">
+                            <h3>Figma</h3>
+                            <p>サイトデザインやアプリケーションのデザインを大学の課題や自主製作を行っています。</p>
+                        </div>
+                    </div>
+                </a>
 
                 <!-- 作品3 -->
-                <div class="work-item">
-                    <div class="work-thumbnail">🧸</div>
-                    <div class="work-info">
-                        <h3>作品タイトル3</h3>
-                        <p>枠が足りなくなったら、この「work-item」の塊をコピーして増やせます。</p>
+                <a href="illustration-view.html" class="work-item-link">
+                    <div class="work-item">
+                        <div class="work-thumbnail">🧸</div>
+                        <div class="work-info">
+                            <h3>イラスト</h3>
+                            <p>趣味でイラストを描いています。</p>
+                        </div>
                     </div>
-                </div>
+                </a>
 
             </div>
         </section>
@@ -82,12 +91,7 @@
         <section id="contact">
             <h2 class="section-title">Contact</h2>
             <div class="profile-card">
-                <p>お仕事のご依頼やメッセージは、各種SNSのDM、またはメールアドレスまでお気軽にご連絡ください💌</p>
-                <p class="contact-links">
-                    <a href="#">Twitter</a> | 
-                    <a href="#">Instagram</a> | 
-                    <a href="#">Email</a>
-                </p>
+                <p>メールアドレス → ayaka.mochizuki0629@gmail.com</p>
             </div>
         </section>
 
@@ -95,8 +99,9 @@
 
     <!-- フッター -->
     <footer>
-        <p>&copy; 2026 My Portfolio. Created with love.</p>
+        <p>&copy; 2026 Ayaka Mochizuki Portfolioa</p>
     </footer>
 
 </body>
+
 </html>

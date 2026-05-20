@@ -135,6 +135,14 @@ nav a {
     margin-bottom: 40px;
 }
 
+
+.work-item-link {
+    text-decoration: none;
+    color: inherit;
+
+    display: grid; 
+}
+
 .work-item {
     background: white;
     border-radius: 20px;
