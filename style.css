@@ -1,0 +1,184 @@
+/* --- 全体のリセットと基本設定 --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    background-color: #fcf8f2; /* ミルク色（優しい薄ベージュ） */
+    color: #5a4a42; /* 柔らかいココアブラウン */
+    line-height: 1.6;
+}
+
+a {
+    color: #ff9ebe;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff6b8b;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- ヘッダー --- */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px dashed #ffe3ec; /* 丸みのあるドットの境界線 */
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #ff9ebe; /* パステルピンク */
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #8c766b;
+}
+
+/* --- メインビジュアル（最初に見えるところ） --- */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #fff5f7 0%, #fff0e6 100%); /* ほんのりピンクとオレンジのグラデ */
+    border-radius: 0 0 40px 40px; /* 下側だけ大きく丸める */
+    margin-bottom: 40px;
+    box-shadow: 0 8px 24px rgba(255, 182, 193, 0.15);
+}
+
+.hero-img {
+    width: 120px;
+    height: 120px;
+    background-color: #ffe3ec;
+    border-radius: 50%; /* まんまる */
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #6e564a;
+}
+
+/* --- 見出しのデザイン --- */
+.section-title {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #ff9ebe;
+    margin: 40px 0 20px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 見出しの下のリボン風の線 */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffe3ec;
+    border-radius: 2px;
+}
+
+/* --- プロフィール・コンタクトセクション --- */
+.profile-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    border: 2px solid #fff0e6;
+    text-align: center;
+}
+
+.contact-links {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact-links a {
+    margin: 0 10px;
+}
+
+/* --- 作品集（ギャラリー）セクション --- */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.work-item {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    border: 2px solid #fff5f7;
+    transition: transform 0.3s;
+}
+
+/* ホバーした時にふわっと浮き上がる */
+.work-item:hover {
+    transform: translateY(-5px);
+}
+
+.work-thumbnail {
+    height: 160px;
+    background-color: #ffeef2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.work-info {
+    padding: 15px;
+}
+
+.work-info h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #5a4a42;
+}
+
+.work-info p {
+    font-size: 0.85rem;
+    color: #8c766b;
+}
+
+/* --- フッター --- */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+    font-size: 0.8rem;
+    color: #b5a49c;
+    border-top: 2px dashed #ffe3ec;
+}
