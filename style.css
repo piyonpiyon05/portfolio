@@ -43,17 +43,94 @@ header h1 {
     letter-spacing: 2px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* ポジションの基準となるコンテナ */
+header .container {
+    position: relative;
 }
 
-nav a {
+/* ハンバーガーボタンの見た目 */
+.hamburger {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%); /* 縦方向の中央揃え */
+    z-index: 100;
+    width: 30px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* 三本線の見た目（ポートフォリオのココアブラウンに統一） */
+.hamburger span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #5a4a42; 
+    transition: all 0.3s ease;
+}
+
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 11px; }
+.hamburger span:nth-child(3) { bottom: 0; }
+
+/* ボタンがアクティブ（×印）になったとき */
+.hamburger.is-active span:nth-child(1) { transform: translateY(11px) rotate(45deg); }
+.hamburger.is-active span:nth-child(2) { opacity: 0; }
+.hamburger.is-active span:nth-child(3) { transform: translateY(-11px) rotate(-45deg); }
+
+/* ナビゲーションメニュー（初期状態はフワッと隠す） */
+#js-nav {
+    position: absolute;
+    top: calc(100% + 15px); /* ヘッダーの点線の下あたりに配置 */
+    right: 20px;
+    width: 180px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(255, 182, 193, 0.15); /* ほんのりピンクを含んだ可愛い影 */
+    border: 2px solid #fff5f7;
+    border-radius: 15px; /* 角を丸めて可愛い印象に */
+    padding: 10px 0;
+    
+    /* アニメーション用の初期設定 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 90;
+}
+
+/* ボタンが押されてアクティブになったら表示 */
+#js-nav.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* 元の横並び設定を縦並びに上書き */
+#js-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* 縦並びにする */
+    gap: 0; /* gapをリセット */
+}
+
+#js-nav a {
+    display: block;
+    padding: 12px 20px;
     font-weight: bold;
     font-size: 0.9rem;
     color: #8c766b;
+    text-align: left; /* 左寄せにしてメニューらしく */
+    transition: background-color 0.2s;
+}
+
+/* メニューの項目にマウスを乗せた時 */
+#js-nav a:hover {
+    background-color: #fff5f7; /* 薄いピンクの背景で選択感を出す */
+    color: #ff6b8b;
 }
 
 /* --- メインビジュアル（最初に見えるところ） --- */
