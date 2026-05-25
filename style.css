@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 body {
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     background-color: #fcf8f2; /* ミルク色（優しい薄ベージュ） */
@@ -205,6 +210,15 @@ header .container {
 }
 
 /* --- 作品集（ギャラリー）セクション --- */
+.work-img{
+    width: 100%;
+    max-width: 300px;
+    height:auto;
+    border-radius: 8px;
+    display:block;
+    margin: 0 auto;
+}
+
 .works-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

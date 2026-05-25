@@ -13,12 +13,20 @@
     <header>
       <div class="container">
         <h1>Ayaka Mochizuki Portfolio</h1>
-        <nav>
+         <!-- 追加：ハンバーガーボタン -->
+        <button class="hamburger" id="js-hamburger" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- 既存のnav（idを追加しています） -->
+        <nav id="js-nav">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#works">Works</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -27,67 +35,32 @@
     <!-- メイン -->
     <section class="hero">
       <div class="container">
-        <h2>a</h2>
-        <p>ものづくりと、かわいいデザインが大好きです。</p>
+        <h2>And More</h2>
+        <p>その他の個人製作</p>
       </div>
     </section>
 
-    <!-- メインコンテンツ -->
     <main class="container">
-      <!-- アバウトセクション -->
-      <section id="about">
-        <h2 class="section-title">About Me</h2>
+      <!-- No.1セクション -->
+      <section id="No1">
+        <h2 class="section-title">No.1</h2>
         <div class="profile-card">
-          <p>大学でプログラミングを学んでいます。</p>
+           <h2>作品１.ハンバーガー</h2>
+          <p>Blenderを使用してハンバーガーのモデリングをしました</p>
+          <img 
+          src="img/hamburger.png" 
+          alt="hamburger"
+          class="work-img"
+          
+          >
         </div>
       </section>
 
-      <!-- ワークスセクション -->
-      <section id="works">
-        <h2 class="section-title">My Works</h2>
-        <div class="works-grid">
-          <!-- 作品1 Illustrator-->
-          <a href="illustrator-view.html" class="work-item-link">
-            <div class="work-item">
-              <div class="work-thumbnail">💻</div>
-              <div class="work-info">
-                <h3>Illustrator</h3>
-                <p>簡単なアイコンの制作ができます。</p>
-              </div>
-            </div>
-          </a>
-
-          <!-- 作品2 Figma-->
-          <a href="figma-view.html" class="work-item-link">
-            <div class="work-item">
-              <div class="work-thumbnail">📸</div>
-              <div class="work-info">
-                <h3>Figma</h3>
-                <p>
-                  サイトデザインやアプリケーションのデザインを大学の課題や自主製作を行っています。
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <!-- 作品3 -->
-          <a href="illustration-view.html" class="work-item-link">
-            <div class="work-item">
-              <div class="work-thumbnail">🧸</div>
-              <div class="work-info">
-                <h3>イラスト</h3>
-                <p>趣味でイラストを描いています。</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <!-- コンタクトセクション -->
-      <section id="contact">
-        <h2 class="section-title">Contact</h2>
+      <!-- No.2セクション -->
+      <section id="No2">
+        <h2 class="section-title">No.2</h2>
         <div class="profile-card">
-          <p>メールアドレス → ayaka.mochizuki0629@gmail.com</p>
+          <p>作品2</p>
         </div>
       </section>
     </main>
@@ -96,5 +69,6 @@
     <footer>
       <p>&copy; 2026 Ayaka Mochizuki Portfolio</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
