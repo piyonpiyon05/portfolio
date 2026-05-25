@@ -212,7 +212,7 @@ header .container {
 /* --- 作品集（ギャラリー）セクション --- */
 .work-img{
     width: 100%;
-    max-width: 300px;
+    max-width: 600px;
     height:auto;
     border-radius: 8px;
     display:block;
