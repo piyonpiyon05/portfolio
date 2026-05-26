@@ -272,6 +272,23 @@ header .container {
     color: #8c766b;
 }
 
+.work-thumbnail {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 枠線に合わせて画像をトリミング */
+  object-position: center;
+}
+
 /* --- フッター --- */
 footer {
     text-align: center;

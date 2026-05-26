@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- style.css 読込 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- -->
+    <header>
+      <div class="container">
+        <h1>Ayaka Mochizuki Portfolio</h1>
+
+        <!-- 追加：ハンバーガーボタン -->
+        <button class="hamburger" id="js-hamburger" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- 既存のnav（idを追加しています） -->
+        <nav id="js-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#works">Works</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- メイン -->
+    <section class="hero">
+      <div class="container">
+        <h2>Blender作品の紹介です</h2>
+        <p></p>
+      </div>
+    </section>
+
+    <!-- メインコンテンツ -->
+    <main class="container">
+      <!-- No.1セクション -->
+      <section id="No1">
+        <h2 class="section-title">No.1</h2>
+        <div class="profile-card">
+          <h2>作品１.ハンバーガー</h2>
+          <p>使用ツール : Blender</p>
+          <p>
+            2Dのデザインにとどまらず、プロダクトの立体的な構造や質感の表現を学ぶためにはじめに制作した3D作品です。
+          </p>
+          <img src="img/hamburger.png" alt="hamburger" class="work-img" />
+        </div>
+      </section>
+
+      <!-- No.2セクション -->
+      <section id="No2">
+        <h2 class="section-title">No.2</h2>
+        <div class="profile-card">
+          <h2>作品２.ペンギン</h2>
+          <p>使用ツール : Blender</p>
+          <p>
+            親しみやすいキャラクター性を意識した3Dマスコットです。
+          </p>
+          <img src="img/penguin.png" alt="penguin" class="work-img" />
+        </div>
+      </section>
+
+       <!-- No.3セクション -->
+      <section id="No3">
+        <h2 class="section-title">No.3</h2>
+        <div class="profile-card">
+          <h2>作品３.ミニマルベッドルーム</h2>
+          <p>使用ツール : Blender</p>
+          <p>
+            くすみピンクを基調とした落ち着いたカラーリングを意識した空間をえん
+          </p>
+          <img src="img/room.png" alt="penguin" class="work-img" />
+        </div>
+      </section>
+
+       <!-- No.4セクション -->
+      <section id="No4">
+        <h2 class="section-title">No.4</h2>
+        <div class="profile-card">
+          <h2>作品４.リキッド・アニメーション</h2>
+          <p>使用ツール : Blender</p>
+          <p>
+            牛乳パックの中にグラデーションの液体を閉じ込めた3Dモーション作品です。
+          </p>
+          <video src="mp4/pack.mp4" autoplay muted loop alt="pack" class="work-img"></video>
+        </div>
+      </section>
+
+      <!-- コンタクトセクション -->
+      <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="profile-card">
+          <p>メールアドレス → ayaka.mochizuki0629@gmail.com</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+      <p>&copy; 2026 Ayaka Mochizuki Portfolio</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

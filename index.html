@@ -3,25 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <!-- style.css 読込 -->
+    <title>Ayaka Mochizuki Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- -->
     <header>
       <div class="container">
         <h1>Ayaka Mochizuki Portfolio</h1>
 
-        <!-- 追加：ハンバーガーボタン -->
         <button class="hamburger" id="js-hamburger" aria-label="メニューを開く">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <!-- 既存のnav（idを追加しています） -->
         <nav id="js-nav">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -33,66 +29,78 @@
       </div>
     </header>
 
-    <!-- メイン -->
     <section class="hero">
       <div class="container">
         <h2>こんにちは、現在大学3年生の望月彩花です！</h2>
-        <p>ものづくりと、かわいいデザインが大好きです。</p>
+        <p>ものづくりと、かわいいデザインが大好きです！</p>
       </div>
     </section>
 
-    <!-- メインコンテンツ -->
     <main class="container">
-      <!-- アバウトセクション -->
       <section id="about">
         <h2 class="section-title">About Me</h2>
         <div class="profile-card">
-          <p>大学でプログラミングを学んでいます。</p>
+          <p>大学ではプログラミングを学んでいます。デザインからHTML/CSSコーディングまで、一貫した制作ができる人材になれるよう努力しております。</p>
         </div>
       </section>
 
-      <!-- ワークスセクション -->
       <section id="works">
         <h2 class="section-title">My Works</h2>
         <div class="works-grid">
-          <!-- 作品1 Illustrator-->
-          <a href="illustrator-view.html" class="work-item-link">
-            <div class="work-item">
-              <div class="work-thumbnail">💻</div>
-              <div class="work-info">
-                <h3>Illustrator</h3>
-                <p>簡単なアイコンの制作ができます。</p>
-              </div>
-            </div>
-          </a>
-
-          <!-- 作品2 Figma-->
+          
+         
           <a href="figma-view.html" class="work-item-link">
             <div class="work-item">
-              <div class="work-thumbnail">📸</div>
+              <div class="work-thumbnail">
+                <img src="img/menuboard.png" alt="Figma作品">
+              </div>
               <div class="work-info">
                 <h3>Figma</h3>
-                <p>
-                  サイトデザインやアプリケーションのデザインを大学の課題や自主製作を行っています。
-                </p>
+                <p>UI/UXを意識したサイト・アプリの画面設計を行います。</p>
               </div>
             </div>
           </a>
 
-          <!-- 作品3 -->
           <a href="illustration-view.html" class="work-item-link">
             <div class="work-item">
-              <div class="work-thumbnail">🧸</div>
+              <div class="work-thumbnail">
+                <img src="img/girl.png" alt="ibisPaint作品">
+              </div>
               <div class="work-info">
-                <h3>And More</h3>
-                <p>その他の作品(イラスト・3DCG)</p>
+                <h3>ibisPaint (Illustration)</h3>
+                <p>主にターゲット層が「かわいい」「きれい」と感じる世界観を表現したキャラクターイラストです。</p>
               </div>
             </div>
           </a>
+
+          <a href="blender-view.html" class="work-item-link">
+            <div class="work-item">
+              <div class="work-thumbnail">
+                <img src="img/hamburger.png" alt="Blender作品">
+              </div>
+              <div class="work-info">
+                <h3>Blender (3DCG)</h3>
+                <p></p>
+              </div>
+            </div>
+          </a>
+
+           <a href="illustrator-view.html" class="work-item-link">
+            <div class="work-item">
+              <div class="work-thumbnail">
+                <img src="img/magcup.png" alt="Illustrator作品">
+              </div>
+              <div class="work-info">
+                <h3>Illustrator (LogoIcon)</h3>
+                <p>基本的な操作ができます</p>
+              </div>
+            </div>
+          </a>
+
+
         </div>
       </section>
 
-      <!-- コンタクトセクション -->
       <section id="contact">
         <h2 class="section-title">Contact</h2>
         <div class="profile-card">
@@ -101,9 +109,8 @@
       </section>
     </main>
 
-    <!-- フッター -->
     <footer>
-      <p>&copy; 2026 Ayaka Mochizuki Portfolioa</p>
+      <p>&copy; 2026 Ayaka Mochizuki Portfolio</p>
     </footer>
 
     <script src="script.js"></script>
