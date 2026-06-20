@@ -1,84 +1,105 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <!-- style.css 読込 -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- -->
-    <header>
-      <div class="container">
-        <h1>Ayaka Mochizuki Portfolio</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <!-- style.css 読込 -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <!-- 追加：ハンバーガーボタン -->
-        <button class="hamburger" id="js-hamburger" aria-label="メニューを開く">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+<body>
+  <!-- -->
+  <header>
+    <div class="container">
+      <h1>Ayaka Mochizuki Portfolio</h1>
 
-        <!-- 既存のnav（idを追加しています） -->
-        <nav id="js-nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#works">Works</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      <!-- 追加：ハンバーガーボタン -->
+      <button class="hamburger" id="js-hamburger" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    <!-- メイン -->
-    <section class="hero">
-      <div class="container">
-        <h2>Figma作品の紹介です</h2>
-        <p></p>
+      <!-- 既存のnav（idを追加しています） -->
+      <nav id="js-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#works">Works</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- メイン -->
+  <section class="hero">
+    <div class="container">
+      <h2>Figma作品の紹介です</h2>
+      <p></p>
+    </div>
+  </section>
+
+  <!-- メインコンテンツ -->
+  <main class="container">
+    <!-- No.1セクション -->
+    <section id="No1">
+      <h2 class="section-title">No.1</h2>
+      <div class="profile-card">
+        <h2>作品１.カフェ注文用タブレットメニュー UI</h2>
+        <p>使用ツール : Figma</p>
+        <p>
+          全体を落ち着いたダークブラウンとくすみピンクで統一し、カフェの持つお洒落な世界観を壊さないように配慮しました。また、「カゴに追加」や「ご注文確定」などの重要なアクションボタンには、補色である黄緑色をアクセントカラーとして使用し、直感的に次の操作へ進めるような視覚的誘導（UI）を意識しました。
+        </p>
+        <img src="img/menuboard.png" alt="hamburger" class="work-img" />
       </div>
     </section>
 
-    <!-- メインコンテンツ -->
-    <main class="container">
-      <!-- No.1セクション -->
-      <section id="No1">
-        <h2 class="section-title">No.1</h2>
-        <div class="profile-card">
-          <h2>作品１.カフェ注文用タブレットメニュー UI</h2>
-          <p>使用ツール : Figma</p>
-          <p>全体を落ち着いたダークブラウンとくすみピンクで統一し、カフェの持つお洒落な世界観を壊さないように配慮しました。また、「カゴに追加」や「ご注文確定」などの重要なアクションボタンには、補色である黄緑色をアクセントカラーとして使用し、直感的に次の操作へ進めるような視覚的誘導（UI）を意識しました。</p>
-          <img src="img/menuboard.png" alt="hamburger" class="work-img" />
-        </div>
-      </section>
+    <!-- No.2セクション -->
+    <section id="No2">
+      <h2 class="section-title">No.2</h2>
+      <div class="profile-card">
+        <h2>作品２.ToDo List</h2>
+        <p>使用ツール : Figma</p>
+        <p>スマートフォンの片手操作を意識したボタン配置と、タスクの緊急度を色で識別できるシンプルなコンポーネント設計を行いました。</p>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+          src="https://embed.figma.com/proto/3C4G3ABAjxihdgJG0nfnEo/ToDo-List?node-id=1-10&p=f&viewport=455%2C15%2C0.22&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A10&page-id=0%3A1&embed-host=share"
+          allowfullscreen></iframe>
+        <img src="img/ToDo-List.png" alt="hamburger" class="work-img" />
+      </div>
+    </section>
 
-     <!-- No.2セクション -->
-      <section id="No2">
-        <h2 class="section-title">No.2</h2>
-        <div class="profile-card">
-          <h2>作品２.ToDo List</h2>
-          <p>使用ツール : Figma</p>
-          <p>スマートフォンの片手操作を意識したボタン配置と、タスクの緊急度を色で識別できるシンプルなコンポーネント設計を行いました。</p>
-          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/3C4G3ABAjxihdgJG0nfnEo/ToDo-List?node-id=1-10&p=f&viewport=455%2C15%2C0.22&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A10&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
-          <img src="img/ToDo-List.png" alt="hamburger" class="work-img" />
-        </div>
-      </section>
+    <!-- No.3セクション -->
+    <section id="No3">
+      <h2 class="section-title">No.3</h2>
+      <div class="profile-card">
+        <h2>作品３.架空のライフスタイル雑貨ブランド<br>mon trésor（モン・トレゾール）」スマホ用LPデザイン</h2>
+        <p>使用ツール : Figma</p>
+        <p>
+          スマホ特有の「流し見」を意識し、説明的になりすぎないビジュアルと共感性を重視しました。ファーストビュー直後に「スマホの見すぎによる心のカチコチ感」という具体的な悩みに寄り添うセクションを配置し、そこから解決策（キャンドルのある暮らし）へと滑らかに繋げる構成にしています。
+          <br> 日本語フォントには上品な明朝体を採用しつつ、「3 Points」の数字部分にはただの明朝体ではなくおしゃれなCormorant
+          Garamondを組み合わせ、Z世代に人気の高い、垢抜けた海外ブランドのような空気感を演出しています。また、白いカードの背景にテーマカラーを意識したごく薄いラベンダーのシャドウを仕込むことで、画面全体の立体感と高級感を高めました。
+        </p>
+        <img src="img/aroma-lp.png" alt="aroma-lp" class="work-img" />
+      </div>
+    </section>
 
-      <!-- コンタクトセクション -->
-      <section id="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="profile-card">
-          <p>メールアドレス → ayaka.mochizuki0629@gmail.com</p>
-        </div>
-      </section>
-    </main>
+    <!-- コンタクトセクション -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="profile-card">
+        <p>メールアドレス → ayaka.mochizuki0629@gmail.com</p>
+      </div>
+    </section>
+  </main>
 
-    <!-- フッター -->
-    <footer>
-      <p>&copy; 2026 Ayaka Mochizuki Portfolio</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2026 Ayaka Mochizuki Portfolio</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
